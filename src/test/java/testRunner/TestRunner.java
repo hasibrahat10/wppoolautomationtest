@@ -7,9 +7,8 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = {"src/test/java/features"},
-        tags = "@swtichcustomscale",
+        tags = "@login",
         glue = "steps",
-//        dryRun = true,
         plugin = {"pretty", "html:test-output"}
 )
 

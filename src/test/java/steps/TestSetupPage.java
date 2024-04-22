@@ -216,7 +216,7 @@ public class TestSetupPage {
         driver = getEventFiringWebDriver(webDriver);
         driver.manage().timeouts().implicitlyWait(FileHelper.getResInteger("IMPLICIT_WAIT"), TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        driver.get(FileHelper.getResString("BASE_URL_FE"));
+        driver.get(FileHelper.getResString("BASE_URL"));
     }
 
     /**
