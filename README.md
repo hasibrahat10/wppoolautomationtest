@@ -1,6 +1,6 @@
 # Wp-test-site - A Testing website to Test a Plugin for the Assignment through WpPool Company
 
-[![](https://img.shields.io/badge/Java-1.8.0-brightgreen)]() [![](https://img.shields.io/badge/Maven-3.8.1-brightgreen)]()  [![](https://img.shields.io/badge/Cucumber-3.1.2-brightgreen)]() [![](https://img.shields.io/badge/IntelliJ%20IDEA-2019.3-brightgreen)]()
+[![](https://img.shields.io/badge/Java-1.8.0-brightgreen)]() [![](https://img.shields.io/badge/Maven-11-brightgreen)]()  [![](https://img.shields.io/badge/Cucumber-Latest-brightgreen)]() [![](https://img.shields.io/badge/IntelliJ%20IDEA-2021.2-brightgreen)]()
 
 ### Description
 
