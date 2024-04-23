@@ -23,7 +23,7 @@ git clone https://github.com/hasibrahat10/wppoolautomationtest.git
 - Example
 
 ```gherkin
-   Feature: Login Page
+  Feature: Login Page
 
   @login
   Scenario: I want to Login
@@ -67,7 +67,7 @@ public class LoginPageSteps extends TestSetupPage {
 - Example:
 
 ```java
-       public class FileHelper extends TestSetupPage {
+    public class FileHelper extends TestSetupPage {
     public static final ResourceBundle bundle = ResourceBundle.getBundle("config");
 
     public static final String USERNAME = System.getenv("username");
@@ -87,11 +87,10 @@ public class LoginPageSteps extends TestSetupPage {
 
  ```java
        @RunWith(Cucumber.class)
-@CucumberOptions(
+       @CucumberOptions(
         features = {"src/test/java/features"},
         tags = "@swtichcustomscale",
         glue = "steps",
-//        dryRun = true,
         plugin = {"pretty", "html:test-output"}
 )
 
@@ -99,7 +98,46 @@ public class TestRunner {
 }
 ```
 
-### Local run
+```java
+public class EventReporter implements WebDriverEventListener {
+    static By locator;
+
+    @Override
+    public void beforeAlertAccept(WebDriver webDriver) {
+
+    }
+
+    @Override
+    public void afterAlertAccept(WebDriver webDriver) {
+
+    }
+
+    @Override
+    public void afterAlertDismiss(WebDriver webDriver) {
+
+    }
+
+    @Override
+    public void beforeAlertDismiss(WebDriver webDriver) {
+
+    }
+}
+
+```
+#### Above block (EventReporter) we use, to track the event report when we run the script, it will locate the each and every element we want to locate through our code
+
+## Resource for Config Properties
+```
+BROWSER=chrome
+HEADLESS=false
+IMPLICIT_WAIT=10
+EXPLICIT_WAIT=20
+SCREENSHOT=true
+EVENT_ENABLE=true
+BASE_URL=http://localhost:8888/wp-test-site/wp-login.php
+BASE_URL_FE=http://localhost:8888/wp-test-site/
+```
+## Local run
 
 - Go to testRunner package and open this `TestRunner.java` file
 - Right-click on the file
@@ -107,7 +145,7 @@ public class TestRunner {
 - Then click on it
 - It will run all the tests that mention in the tags like we can set the tag as (`tags = {"@login, @contact-us, ~@login-failed"}`)
 
-##### Maven run
+#### Maven run
 
 - Apache Maven should install on your local machine
 - Open terminal
@@ -123,3 +161,9 @@ public class TestRunner {
 - Open in a browser
 
 
+#### Questions
+
+If you have trouble getting set up, or if you have any questions, please don't hesitate to reach out to me. I'm happy to
+help!
+
+[![](https://img.shields.io/badge/Email--Address%3A-hasancse10%40gmail.com-blue)]()
